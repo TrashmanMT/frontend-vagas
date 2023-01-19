@@ -1,0 +1,22 @@
+.SectionSlide {
+ width: 100%;
+ height: 515px;
+ background: #DFD3C3;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+@media(max-width: 770px) {
+ .SectionSlide {
+  padding: 10px 5px;
+  height: auto;
+ }
+}
+
+@media(max-width: 390px) {
+ .SectionSlide {
+  padding: 10px 5px;
+  height: auto;
+ }
+}

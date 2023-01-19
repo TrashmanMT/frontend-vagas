@@ -1,0 +1,35 @@
+.Slide {
+ width: 770px;
+}
+
+.figures {
+ display: flex;
+}
+
+.image {
+ padding: 5px;
+}
+
+.image img {
+ pointer-events: none;
+}
+
+.carrosel {
+ overflow: hidden;
+ cursor: grab;
+}
+
+@media(max-width: 770px) {
+ .Slide {
+  width: 100%;
+ }
+}
+
+@media(max-width: 390px) {
+ .Slide {
+  width: 100%;
+ }
+ .image img {
+  width: 360px;
+ }
+}

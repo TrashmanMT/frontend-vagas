@@ -1,0 +1,148 @@
+.Newsletter {
+ width: 100%;
+ height: auto;
+ background: #D0B8A8;
+ margin: 0;
+ padding: 23px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 20px 30px 20px 30px;
+}
+
+.Newsletter h2 {
+ font-family: 'Bebas Neue';
+ font-style: normal;
+ font-weight: 400;
+ font-size: 32px;
+ line-height: 38px;
+ letter-spacing: 0.055em;
+}
+
+.flexColumn {
+ width: 100%;
+ max-width: 1024px;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ margin-top: 54px;
+}
+
+.primeiraParte p{
+ width: 397px;
+ margin-bottom: 10px;
+ font-family: 'Source Sans 3';
+ font-style: normal;
+ font-weight: 400;
+ font-size: 20px;
+ line-height: 28px;
+}
+
+.img {
+ margin-top: 53px;
+ margin-left: 60px; 
+}
+
+.formulario {
+ display: flex;
+ flex-direction: column;
+}
+
+.formulario label {
+ display: flex;
+ flex-direction: column;
+ font-family: 'Source Sans 3';
+ font-style: normal;
+ font-weight: 400;
+ font-size: 20px;
+ line-height: 28px;
+}
+
+.formulario label input {
+ margin-bottom: 22px;
+ margin-top: 11px;
+ 
+ width: 328px;
+ height: 37px;
+
+ background: rgba(217, 217, 217, 0.5);
+ border: 1px solid #000000;
+ border-radius: 4px;
+}
+
+.formulario label textarea {
+
+ background: rgba(217, 217, 217, 0.5);
+ border: 1px solid #000000;
+ border-radius: 4px;
+ width: 328px;
+ margin-top: 11px;
+ font-size: 16px;
+
+}
+
+.formulario button {
+ margin-top: 14px;
+
+ width: 120px;
+ height: 40px;
+
+ border-radius: 8px;
+ border: none;
+ 
+ background: #85586F;
+}
+
+.formulario button:hover {
+ background-color: #B96691;
+}
+
+.formulario input:focus, .formulario textarea:focus {
+ outline: none;
+ border: 2px solid #85586F;
+ background: rgba(217, 217, 217, 0.5);
+ 
+}
+
+.formulario input:hover, .formulario textarea:hover {
+ border: 2px solid #85586F;
+}
+
+@media(max-width: 770px) {
+ .flexColumn {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+ }
+ .primeiraParte p {
+  text-align: center;
+ }
+ .primeiraParte img{
+  display: none;
+ }
+}
+
+@media(max-width: 390px) {
+ .Newsletter h2 {
+  text-align: center;
+  font-size: 30px;
+ }
+
+ .primeiraParte {
+  display: none;
+ }
+
+ .formulario label {
+  font-weight: bold;
+ }
+ 
+ .formulario label input {
+  margin-bottom: 12px;
+  margin-top: 11px;
+
+  height: 40px;
+  border-radius: 20px;
+  padding-inline: 10px;
+ }
+}

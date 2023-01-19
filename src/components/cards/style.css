@@ -1,0 +1,28 @@
+.cardAnimal {
+ display: flex;
+ flex-direction: row;
+ margin-top: 75px;
+ padding: 0 20px;
+ overflow: hidden;
+}
+
+div .max_width {
+ max-width: 1000px;
+}
+
+.cardAnimal li img {
+ width: 200px;
+ height: 300px;
+}
+
+@media(max-width: 390px) {
+ .cardAnimal {
+  flex-direction: column;
+  margin-top: 20px;
+ }
+
+ .cardAnimal li img {
+  width: 300px;
+  height: 250px;
+ }
+}

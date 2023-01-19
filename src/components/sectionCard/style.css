@@ -1,0 +1,36 @@
+.SectionCards {
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ background-color: #F8EDE3;
+ height: auto;
+ box-sizing: border-box;
+ padding: 50px 20px 50px 20px;
+ overflow: hidden;
+}
+
+
+.SectionCards  h2{
+ font-family: 'Bebas Neue';
+ font-style: normal;
+ font-weight: 400;
+ font-size: 32px;
+ line-height: 38px;
+ text-align: center;
+ letter-spacing: 0.105em;
+ width: 500px;
+}
+
+@media(max-width: 390px) {
+ .SectionCards {
+  height: 1000px;
+  margin: 0 auto;
+ }
+ 
+ .SectionCards h2 {
+  font-size: 20px;
+  width: 300px;
+ }
+}
